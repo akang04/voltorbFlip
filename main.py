@@ -1,5 +1,8 @@
-#Voltorb Flip
-#Made by Andrew Kang
+'''
+Voltorb Flip
+Minigame from Pokemon Heartgold / Soulsilver
+Made by Andrew Kang
+'''
 
 
 import pygame
