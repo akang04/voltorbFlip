@@ -1,8 +1,7 @@
 #Voltorb Flip
 #Made by Andrew Kang
 
-#yo
-#testing again 123
+
 import pygame
 from pygame import *
 from random import choice
@@ -27,28 +26,28 @@ pygame.display.set_caption('Voltorb Flip')
 #load images
 background = pygame.image.load('assets/background.png')
 background = pygame.transform.scale(background, (655,998)).convert()
-blankTile = pygame.image.load('assets/blanktile.png')
+blankTile = pygame.image.load('assets/tiles/blanktile.png')
 blankTile = pygame.transform.scale(blankTile, (60,60)).convert()
-flippedTile1 = pygame.image.load('assets/flippedtile1.png')
+flippedTile1 = pygame.image.load('assets/tiles/flippedtile1.png')
 flippedTile1 = pygame.transform.scale(flippedTile1, (60,60)).convert()
-flippedTile2 = pygame.image.load('assets/flippedtile2.png')
+flippedTile2 = pygame.image.load('assets/tiles/flippedtile2.png')
 flippedTile2 = pygame.transform.scale(flippedTile2, (60,60)).convert()
-flippedTile3 = pygame.image.load('assets/flippedtile3.png')
+flippedTile3 = pygame.image.load('assets/tiles/flippedtile3.png')
 flippedTile3 = pygame.transform.scale(flippedTile3, (60,60)).convert()
-hoverTile = pygame.image.load('assets/tilehover.png')
+hoverTile = pygame.image.load('assets/tiles/tilehover.png')
 hoverTile = pygame.transform.scale(hoverTile, (75,75)).convert()
-bombTile = pygame.image.load('assets/bombtile.png')
+bombTile = pygame.image.load('assets/tiles/bombtile.png')
 bombTile = pygame.transform.scale(bombTile, (60,60)).convert()
 
 boldNums = []
 for i in range(10):
-    tempNum = pygame.image.load('assets/bold_' + str(i) + '.png')
+    tempNum = pygame.image.load('assets/numbers/bold_' + str(i) + '.png')
     tempNum = pygame.transform.scale(tempNum, (15,20)).convert()
     boldNums.append(tempNum)
 
 bigNums = []
 for i in range(10):
-    tempNum = pygame.image.load('assets/big_' + str(i) + '.png')
+    tempNum = pygame.image.load('assets/numbers/big_' + str(i) + '.png')
     tempNum = pygame.transform.scale(tempNum, (35,55)).convert()
     bigNums.append(tempNum)
 
