@@ -1,8 +1,8 @@
 #Voltorb Flip
 #Made by Andrew Kang
 
-#test update thing
-#is a test
+#yo
+
 import pygame
 from pygame import *
 from random import choice
