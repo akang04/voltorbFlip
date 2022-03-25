@@ -235,10 +235,10 @@ while run:
             cardGrid[i][t].draw()
     
     #load dance into loop
-    screen.blit(dancing_man[int(dance_index)],(500,511))
-    dance_index += .5
-    if dance_index > 74:
-        dance_index = 0
+    # screen.blit(dancing_man[int(dance_index)],(500,511))
+    # dance_index += .5
+    # if dance_index > 74:
+    #     dance_index = 0
 
     #event handler
     for event in pygame.event.get():
