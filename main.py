@@ -51,7 +51,13 @@ for i in range(10):
     tempNum = pygame.transform.scale(tempNum, (35,55)).convert()
     bigNums.append(tempNum)
 
-
+#load epic watermelon guy and set index variable
+dancing_man = []
+for i in range(75):
+    a = pygame.image.load('assets/dance_frames/frame_' + str(i) + '.gif')
+    a = pygame.transform.scale(a, (135, 155)).convert()
+    dancing_man.append(a)
+dance_index = 0
 
 #set starting points amount
 TOTALMONEY = 0
@@ -83,7 +89,9 @@ class Card():
         #get mouse pos
         pos = pygame.mouse.get_pos()
         
+        #Prints (x,y) of mouse position
         #print(pos)
+
         #check mouseover and clicked conditions
         if self.rect.collidepoint(pos):
             #Shows hover graphic
@@ -226,6 +234,11 @@ while run:
         for t in range(5):
             cardGrid[i][t].draw()
     
+    #load dance into loop
+    screen.blit(dancing_man[int(dance_index)],(500,511))
+    dance_index += .5
+    if dance_index > 74:
+        dance_index = 0
 
     #event handler
     for event in pygame.event.get():
