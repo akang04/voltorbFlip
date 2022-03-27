@@ -1,6 +1,7 @@
 '''
 Voltorb Flip
 Minigame from Pokemon Heartgold / Soulsilver
+Flip tiles to get points. Don't flip the voltorb!
 Made by Andrew Kang
 '''
 
